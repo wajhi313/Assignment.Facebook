@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #f0f2f5;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: antiquewhite; */
+    /* min-height:100vh; */
+    width: 370px;
+    height: 450px;
+    border: 1px solid rgb(46, 46, 46);
+    margin: 0 auto 30px;
+    padding: 0 0 0 0;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px 2px rgb(100, 100, 100);
+    border: none;
+}
+
+.fblogo {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: #f21818;
+    font-size: 30px;
+    font-weight: 400;
+    padding: 20px;
+}
+
+.form {
+    /* width:50%; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px 8px 0 0;
+    box-sizing: border-box;
+    padding: 10px 16px;
+    width: 100%;
+}
+
+.form hr {
+    width: 100%;
+    border: none;
+    border-top: 1px solid #000000;
+    margin: 10px 0;
+}
+
+.dateofbirth,
+.gender {
+    color: #606770;
+    font-family: SFProText-Medium, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 0;
+    margin-top: 2px;
+    width: 95%;
+}
+
+.dob,
+.name,
+.genderrr {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.form-select,
+.radio {
+    border: 1px solid #ccd0d5;
+    padding: 3px 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f2f5;
+}
+
+.name input {
+    /* border: none; */
+    background-color: #f0f2f5;
+    border: 1px solid #ccd0d5;
+    padding: 3px 10px;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.name input:focus{
+    outline:none;
+  border-color:#1877f2;
+}
+
+.gender-box{
+  border: 1px solid #ccd0d5;
+  border-radius: 6px;
+  padding: 4px 17px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 13px;
+  cursor: pointer;
+  background: #f0f2f5;
+}
+
+.email,
+.pass {
+    background-color: #f0f2f5;
+    border: 1px solid #ccd0d5;
+    padding: 4px 4px;
+    margin-top: 10px;
+    width: 330px;
+    border-radius: 5px;
+}
+
+.email:focus,
+.pass:focus{
+      outline:none;
+  border-color:#1877f2;
+}
+
+label {
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+.p {
+    font-size: 10px;
+    padding: 17px;
+}
+
+.create-btn button{
+  background:#42b72a;
+  color:#fff;
+  border:none;
+  padding:10px 56px;
+  font-size:16px;
+  font-weight:600;
+  border-radius:6px;
+  cursor:pointer;
+}
+
+.create-btn button:hover{background:#36a420;}
+.footer-text{
+  text-align:center;
+  font-size:14px;
+  margin-top:20px;
+}
+
+.already{
+    color: #1877f2;
+    padding: 10px;
+}
+
+@media screen and (max-width: 412px) {
+ .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: antiquewhite; */
+    /* min-height:100vh; */
+    width: 80%;
+    border: 1px solid rgb(46, 46, 46);
+    margin: 0 auto 30px;
+    padding: 0 0 0 0;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px 2px rgb(100, 100, 100);
+    border: none;
+}
+
+.name input {
+    /* border: none; */
+    background-color: #f0f2f5;
+    border: 1px solid #ccd0d5;
+    padding: 3px 10px;
+    width: 60%;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.email,
+.pass {
+    background-color: #f0f2f5;
+    border: 1px solid #ccd0d5;
+    padding: 4px 4px;
+    margin-top: 10px;
+    width: 80%;
+    border-radius: 5px;
+}
+.gender-box{
+  border: 1px solid #ccd0d5;
+  border-radius: 6px;
+  padding: 4px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 10px;
+  cursor: pointer;
+  background: #f0f2f5;
+}
+.form-select,
+.radio {
+    border: 1px solid #ccd0d5;
+    padding: 3px 8px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f2f5;
+}
+.p {
+    font-size: 8px;
+    padding: 20px;
+}
+}
