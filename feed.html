@@ -207,7 +207,7 @@
     <div class="emoji d-flex"> <i class="fa-solid fa-video text-danger"></i>
       <i class="fa-solid fa-photo-film text-success"></i> <i class="fa-regular fa-face-smile"></i>
     </div>
-  </div> 
+  </div>
   <!-- Modal -->
   <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
     aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -233,7 +233,7 @@
       </div>
     </div>
   </div>
-   <!-- stories -->
+  <!-- stories -->
   <div class="stories-section d-flex gap-2">
     <div class="stories-cards"> <img
         src="https://perseus-strategies.com/wp-content/uploads/Imran_Khan_Chairman_of_the_PTI_in_2023_img.jpg">
@@ -290,7 +290,15 @@
       </div>
       <div class="card-body">
         <p class="headline">Focused, confident,</p>
-        <p class="subtext">and in full control... See more</p>
+
+        <p class="subtext">
+          <span class="short-text">and in full control...</span>
+          <span class="full-text">
+            and in full control, pushing limits and achieving more every day with strong determination and clarity.
+          </span>
+          <span class="toggle-btn" onclick="toggleText(this)">See more</span>
+        </p>
+
         <video src="./videos_pics/5.mp4" autoplay muted loop></video>
       </div>
       <div class="card-footer">
@@ -328,11 +336,19 @@
           <i class="fa-solid fa-bars"></i>
         </div>
       </div>
-      <div class="card-body">
-        <p class="headline">Alhamdulillah, successful operation</p>
-        <p class="subtext">Shukr hai Allah ka aur duaon ka.... See more</p>
-        <video src="./videos_pics/2.mp4" autoplay muted loop></video>
-      </div>
+     <div class="card-body">
+  <p class="headline">Alhamdulillah, successful operation</p>
+  
+  <p class="subtext">
+    <span class="short-text">Shukr hai Allah ka aur duaon ka....</span>
+    <span class="full-text">
+      Shukr hai Allah ka aur duaon ka, sab kuch smoothly complete hua aur sab log khairiyat se hain.
+    </span>
+    <span class="toggle-btn" onclick="toggleText(this)">See more</span>
+  </p>
+
+  <video src="./videos_pics/2.mp4" autoplay muted loop></video>
+</div>
       <div class="card-footer">
         <div class="bottom-text">
           <div class="reaction-box">
@@ -354,7 +370,7 @@
       </div>
     </div>
 
-      <div class="card">
+    <div class="card">
       <div class="card-header">
         <img class="profile-pic"
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzpOEa76tAAQQ_jrCV4kTnjTv43XQ3lS3tAA&s"
@@ -368,11 +384,19 @@
           <i class="fa-solid fa-bars"></i>
         </div>
       </div>
-      <div class="card-body">
-        <p class="headline">Work hard, party harder</p>
-        <p class="subtext">memories ban rahi hain ✨... See more</p>
-        <video src="./videos_pics/1.mp4" autoplay muted loop></video>
-      </div>
+    <div class="card-body">
+  <p class="headline">Work hard, party harder</p>
+  
+  <p class="subtext">
+    <span class="short-text">memories ban rahi hain ✨...</span>
+    <span class="full-text">
+      memories ban rahi hain ✨, doston ke sath har moment enjoy ho raha hai aur life ka maza aa raha hai.
+    </span>
+    <span class="toggle-btn" onclick="toggleText(this)">See more</span>
+  </p>
+
+  <video src="./videos_pics/1.mp4" autoplay muted loop></video>
+</div>
       <div class="card-footer">
         <div class="bottom-text">
           <div class="reaction-box">
@@ -394,7 +418,7 @@
       </div>
     </div>
   </div>
-   <!-- chats -->
+  <!-- chats -->
   <div class="col col-lg-3 chats">
 
     <div class="mb-2">
@@ -470,6 +494,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
+
+  <script src="js folder/feed.js"></script>
 </body>
 
 </html>

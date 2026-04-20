@@ -9,7 +9,16 @@ body {
     width: 100%;
     height: 100%;
 }
+.full-text {
+  display: none;
+}
 
+.toggle-btn {
+  color: rgba(0, 0, 222, 0.701);
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 5px;
+}
 .dropdown-menu.dropdown-menu-end {
     height: 335px;
     width: 400px;
