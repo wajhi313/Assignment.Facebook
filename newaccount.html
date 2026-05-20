@@ -14,17 +14,17 @@
     </div>
     <div class="main">
         <div class="form">
-            <h3>Create a new account</h3>
+            <h3>Create a new account</h3> 
             <p>It's quick and easy.</p>
             <hr>
         </div>
 
         <div class="name">
-            <input type="text" placeholder="First name">
-            <input type="text" placeholder="Surname">
+            <input id="firstName" type="text" placeholder="First name">
+            <input id="lastName" type="text" placeholder="Surname">
         </div>
-        <div class="dateofbirth">Date of birth </div>
-        <div class="dob">
+        <div  class="dateofbirth">Date of birth </div>
+        <div id="dob" class="dob">
             <select class="form-select" id="day" name="day">
                 <option>day</option>
                 <option value="01">01</option>
@@ -165,7 +165,7 @@
                 <option value="1940">1940</option>
             </select>
         </div>
-        <div class="gender">Gender</div>
+        <div  class="gender">Gender</div>
         <div class="genderrr">
     <label class="gender-box">
         <input type="radio" name="gender" value="male">
@@ -184,15 +184,15 @@
 
 
         </div>
-        <input type="email" class="email" placeholder="Mobile number or email address">
-        <input type="password" class="pass" placeholder="New password">
+        <input id="email" type="email" class="email" placeholder="Mobile number or email address">
+        <input id="password" type="password" class="pass" placeholder="New password">
 <div class="p">
         <p>People who use our service may have uploaded your contact information to Facebook. Learn more.</p>
         <br>
         <p>By clicking Signup, you agree to our Terms, Privacy Policy and Cookies Policy. You may receive notifications from us and can opt out at any time.</p>
         </div>
         <div class="create-btn">
-         <a href="newaccount.html"> <button> Sign up</button> </a>
+        <button onclick="signupHandler(event)">Sign up</button>
         </div>
 
     <div class="already">
@@ -200,6 +200,8 @@
     </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js folder/newaccount.js"></script>
 </body>
 
 </html>
